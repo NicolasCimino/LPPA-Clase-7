@@ -1,5 +1,6 @@
 .aside-style
 {
+    float: left;
     width: 20%;
 }
 
@@ -22,6 +23,23 @@ width: 60%;
     letter-spacing: .02em;
     font-size: 20px;
     font-weight: 700;
+}
+
+.article-headline {
+    color: #1f1f1f;
+    font-size: 28px;
+    line-height: 1.3;
+    display: block;
+    text-align: left;
+}
+
+.article-subheadline {
+    color: #3b3b3b;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    text-align: left;
 }
 
 .byline-datetime {
@@ -62,7 +80,7 @@ article p a
 main
 {
     display: flex;
-    flex-direction: row;  
+    flex-direction: row;
     box-sizing: border-box;
     padding: 1% 1% 1% 10%;
 }
@@ -72,8 +90,7 @@ body
     width: 100%;
     font-family: Libre Franklin,sans-serif;
     color: #1f1f1f;
-    display: flex;
-    flex-direction: column;
+ 
     
 }
 
@@ -105,5 +122,16 @@ height: auto;
         border-bottom: 1px solid #d5d5d5;
         margin-bottom: 10px;
         width: 100%;
+    }
+}
+
+@media only screen and (min-width: 769px)
+{
+    .article-headline {
+        font-size: 40px;
+    }
+    .article-subheadline {
+        font-size: 24px;
+        line-height: 1.5;
     }
 }
